@@ -90,7 +90,6 @@ public class Simulation {
                 System.out.println("Planets that left the bounds " + (planetAmount+1-size));
             }
             octree.calculateForce(); //calculates force of new tree / adds them in a list
-            System.out.println(octree.getEmptyNodes());
             octree.moveTree(); //moves the bodies
             octree.rebuildTree(); //rebuild the tree from list
 
